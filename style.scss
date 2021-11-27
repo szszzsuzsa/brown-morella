@@ -1,0 +1,158 @@
+$prime-brown: #bc865c;
+$prime-white: whitesmoke;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $prime-brown;
+  }
+  
+  .main-container {
+    display: grid;
+    background-color: $prime-brown;
+  }
+  
+  .main {
+    position: relative;
+    border: 0.1rem solid $prime-white;
+    margin: 5rem 3rem;
+    height: 78.3vh;
+   // border-radius: 0rem 0rem 1rem 1rem;
+  }
+  
+  .text {
+    padding: 2rem 3rem 0rem 3rem;
+   // height: rem;
+    color:  $prime-white;
+    font-size: 0.8em;
+    display: grid;
+    letter-spacing: 0.2rem;
+    white-space: nowrap;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .left {
+    text-align: left;
+  }
+  
+  .right {
+    text-align: right;
+    align-items: end;
+    justify-content: end;
+    bottom: 2rem;
+    right: 3rem;
+    position: absolute;
+    padding-bottom: 2rem;
+  }
+  
+  .morella {
+    position: absolute;
+    height: 3rem;
+    right: -0.08rem;
+    bottom: -1rem;
+    width: 100.2%;
+    text-align: center;
+    align-items: center;
+    background-color: $prime-white;
+    color: $prime-brown;
+    letter-spacing: 0.3rem;
+    border-radius: 0rem 0rem 0.7rem 0.7rem
+  }
+ 
+  .morella p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    transform: translate(0%, -50%);
+  }
+  
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1.1rem;
+    top: 1.3rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    background-color: $prime-white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .burger-btn span {
+    display: block;
+    width: 60%;
+    height: 0.5rem;
+    margin: 0.22rem;
+    background-color: $prime-brown;
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .main-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding: 0rem;
+      overflow: hidden;
+    }
+  
+    .burger-btn {
+      right: -0.3rem;
+      top: 2rem;
+      width: 4rem;
+      height: 4rem;
+      padding: 0.5rem;
+    }
+    
+    .burger-btn span {
+      width: 46%;
+      height: 0.39rem;
+      margin: 0.2rem;
+      background-color: $prime-brown;
+
+    }
+  
+    .main {
+        //overflow: visible;
+        position: relative;
+        border: 0.1rem solid $prime-white;
+        margin: 4rem 2rem;
+        height: 85vh;
+        border-radius: 0rem 0rem 1rem 1rem;
+      }
+    
+  
+    .text {
+        padding: 1rem 1rem;
+        //font-size: 0.58em;
+      //text-overflow: ellipsis;
+    }
+    .right{
+        //padding-bottom: 8rem;
+       
+    }
+  }
+  
+  @media screen and (max-width: 460px) {
+
+    .main{
+        margin: 2rem;
+        }
+    
+
+    .right{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        right: 0rem;
+    }
+
+    .left{
+        text-align: center;
+        
+        //right: 0rem;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
+  
